@@ -1,10 +1,9 @@
 from viscosity import *
-from surface_tension import *
 
 
 cwd = os.getcwd()
 
-deck = Deck(cwd + "/" + "viscosity.yaml")
+deck = Deck(cwd + "/" + "deck.yaml")
 
 polymer = Polymer(deck)
 
