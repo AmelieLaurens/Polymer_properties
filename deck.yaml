@@ -23,13 +23,13 @@ Surface Tension:
   Number of Carbon: 3
   Number of Hydrogen: 6
   Number of Oxygen: 0
-  Contribution to Parachor of Carbon: 9.0
-  Contribution to Parachor of Hydrogen: 15.5
-  Contribution to Parachor of Oxygen: 19.8
-  Molecular Weight of Carbon: 12
-  Molecular Weight of Hydrogen: 1
-  Molecular Weight of Oxygen: 16
-  Density: 900
+  Contribution to Parachor of Carbon in (cm^3/mol)*(erg/cm^2)^(1/4): 9.0
+  Contribution to Parachor of Hydrogen in (cm^3/mol)*(erg/cm^2)^(1/4): 15.5
+  Contribution to Parachor of Oxygen in (cm^3/mol)*(erg/cm^2)^(1/4): 19.8
+  Molecular Weight of Carbon in g/mol: 12
+  Molecular Weight of Hydrogen in g/mol: 1
+  Molecular Weight of Oxygen in g/mol: 16
+  Density in g/cm^3: 0.9
 
 
 
