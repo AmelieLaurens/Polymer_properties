@@ -1,0 +1,10 @@
+Viscosity Constants:
+  Gas Constant: 8.314
+
+Surface Tension Constants:
+  Contribution to Parachor of Carbon in (cm^3/mol)*(erg/cm^2)^(1/4): 9.0
+  Contribution to Parachor of Hydrogen in (cm^3/mol)*(erg/cm^2)^(1/4): 15.5
+  Contribution to Parachor of Oxygen in (cm^3/mol)*(erg/cm^2)^(1/4): 19.8
+  Molecular Weight of Carbon in g/mol: 12
+  Molecular Weight of Hydrogen in g/mol: 1
+  Molecular Weight of Oxygen in g/mol: 16

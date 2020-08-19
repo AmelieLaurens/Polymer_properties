@@ -6,7 +6,9 @@ cwd = os.getcwd()
 
 deck = Deck(cwd + "/" + "deck.yaml")
 
-polymer = Polymer(deck)
+constants = Deck(cwd + "/" + "constants.yaml")
+
+polymer = Polymer(deck, constants)
 
 model = Model(deck, polymer)
 
