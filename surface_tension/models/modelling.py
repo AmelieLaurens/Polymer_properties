@@ -71,7 +71,7 @@ class Model:
     # from [abhinandan_surface_2005] see biblio.bib
     def surface_tension(self, parachor, molar_volume):
         """ 
-        Calculation of the Parachor
+        Calculation of the Surface Tension
         
         :Input:  
         - *parachor* : Parachor ((cm^3/mol)*(erg/cm^2)^(1/4))
