@@ -69,19 +69,23 @@ python example_viscosity.py
 <img src="https://latex.codecogs.com/gif.latex?M&space;=&space;N_{C}&space;M_{C}&space;&plus;&space;N_{H}&space;M_{H}&space;&plus;&space;N_{O}&space;M_{O}" title="M = N_{C} M_{C} + N_{H} M_{H} + N_{O} M_{O}" />
 
 M : Molecular weight of the polymer (g/mol)
+
 <img src="https://latex.codecogs.com/gif.latex?N_{C},&space;N_{H},&space;N_{O}" title="N_{C}, N_{H}, N_{O}" /> : Number of Carbon, Hydrogen and Oxygen in a monomer unit
+
 <img src="https://latex.codecogs.com/gif.latex?M_{C},&space;M_{H},&space;M_{O}" title="M_{C}, M_{H}, M_{O}" /> : Atomic weight of Carbon, Hydrogen and Oxygen (g/mol)
 
 - Calculate the Molar Volume :
 <img src="https://latex.codecogs.com/gif.latex?V_{M}&space;=&space;\frac{M}{\rho&space;}" title="V_{M} = \frac{M}{\rho }" />
 
 <img src="https://latex.codecogs.com/gif.latex?V_{M}" title="V_{M}" /> : Molar Volume (<img src="https://latex.codecogs.com/gif.latex?cm^{3}/mol" title="cm^{3}/mol" />)
+
 <img src="https://latex.codecogs.com/gif.latex?\rho" title="\rho" /> : Density of the polymer (<img src="https://latex.codecogs.com/gif.latex?g/cm^{3}" title="g/cm^{3}" />)
 
 - Calculate the Molecular Parachor
 <img src="https://latex.codecogs.com/gif.latex?P&space;=&space;N_{C}&space;P_{C}&space;&plus;&space;N_{H}&space;P_{H}&space;&plus;&space;N_{O}&space;P_{O}" title="P = N_{C} P_{C} + N_{H} P_{H} + N_{O} P_{O}" />
 
 P : Molecular Parachor (<img src="https://latex.codecogs.com/gif.latex?(cm^{3}/mol)&space;(erg/cm^{2})^{\frac{1}{4}}" title="(cm^{3}/mol) (erg/cm^{2})^{\frac{1}{4}}" />)
+
 <img src="https://latex.codecogs.com/gif.latex?P_{C},&space;P_{H},&space;P_{O}" title="P_{C}, P_{H}, P_{O}" /> : Contribution to Parachor of Carbon, Hydrogen and Oxygen (<img src="https://latex.codecogs.com/gif.latex?(cm^{3}/mol)&space;(erg/cm^{2})^{\frac{1}{4}}" title="(cm^{3}/mol) (erg/cm^{2})^{\frac{1}{4}}" />)
 
 - Calculate the Surface Tension
