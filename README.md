@@ -2,7 +2,9 @@
 
 ## Viscosity
 
-### Compute the viscosity as a function of the temperature and the shear stress  
+### First model : Compute the viscosity as a function of the temperature and the shear stress  
+
+*Reference : Mathematical Models of Polymer Melt Viscosity in Shearing Flow by Dodin (1986)*
 
 <img src="https://latex.codecogs.com/gif.latex?\eta&space;=&space;B&space;exp(\frac{E_{\tau&space;}}{RT}-b\tau&space;^{s})" title="\eta = B exp(\frac{E_{\tau }}{RT}-b\tau ^{s})" />
 
@@ -22,6 +24,43 @@ T : temperature of experiment in K
 
 B, b, s : Constants of the material (in this case : s=1/2)
 
+### Second model : Compute de viscosity as a function of the temperature and the strain rate
+
+*Reference : Polymer processing: modeling and simulation by Osswald and Hernández-Ortiz (2006)*
+
+**The Bird-Carreau-Yasuda Model**
+
+<img src="https://latex.codecogs.com/gif.latex?\eta&space;=&space;\frac{k_{1}&space;a_{T}}{(1&space;&plus;&space;k_{2}&space;\dot{\gamma&space;}&space;a_{T})^{k_{3}}}" title="\eta = \frac{k_{1} a_{T}}{(1 + k_{2} \dot{\gamma } a_{T})^{k_{3}}}" />
+
+
+&nbsp;
+
+
+<img src="https://latex.codecogs.com/gif.latex?\eta" title="\eta" /> : Melt viscosity (Pa.s)
+
+<img src="https://latex.codecogs.com/gif.latex?k_{1},&space;k_{2},&space;k_{3}" title="k_{1}, k_{2}, k_{3}" /> : constants for Carreau-Arrhenius model (semi-crystalline polymer)
+
+<img src="https://latex.codecogs.com/gif.latex?k_{1}" title="k_{1}" /> in Pa.s, <img src="https://latex.codecogs.com/gif.latex?k_{2}" title="k_{2}" /> in s and <img src="https://latex.codecogs.com/gif.latex?k_{3}" title="k_{3}" /> no unit
+
+<img src="https://latex.codecogs.com/gif.latex?a_{T}" title="a_{T}" /> : Arrhenius shift (no unit)
+
+<img src="https://latex.codecogs.com/gif.latex?\dot{\gamma&space;}" title="\dot{\gamma }" /> : strain rate (/s)
+
+**The Arrhenius shift for semi-crystalline polymers**
+
+<img src="https://latex.codecogs.com/gif.latex?a_{T}(T)&space;=&space;\frac{\eta&space;_{0}(T))}{\eta&space;_{0}(T_{0})}&space;=&space;exp(\frac{E_{0}}{R}(\frac{1}{T}&space;-&space;\frac{1}{T_{0}}))" title="a_{T}(T) = \frac{\eta _{0}(T))}{\eta _{0}(T_{0})} = exp(\frac{E_{0}}{R}(\frac{1}{T} - \frac{1}{T_{0}}))" />
+
+
+&nbsp;
+
+
+T : Temperature (K)
+
+<img src="https://latex.codecogs.com/gif.latex?T_{0}" title="T_{0}" /> : Reference temperature (K)
+
+<img src="https://latex.codecogs.com/gif.latex?E_{0}" title="E_{0}" /> : Activation energy (J/mol)
+
+R : Gas constant (J/(mol.K))
 
 
 ### How this code works ?
@@ -30,13 +69,14 @@ B, b, s : Constants of the material (in this case : s=1/2)
 - Deck : get the value in deck.yaml (in the folder common_classes)
 - Polymer : stock the values of deck concerning the polymer in variables that will be reuse (in the folder common_classes)
 - GraphFeatures : stock the values of deck concerning graphic features in variables that will be reuse (in the folder viscosity)
-- Model : contain the equation to predict the viscosity (in the folder viscosity)
+- Model : contain all equations to predict the viscosity (in the folder viscosity)
 - Graph : calculate the data with the model, draw the graphic and save it in the folder Graphics (in the folder viscosity)
 
 
 **What the user have to do ?**
 - Adapt the values in the file deck.yaml :
 
+For the First model : 
 ```yaml
 Polymers:
   Name: 'PP Shell'
