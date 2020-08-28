@@ -14,6 +14,7 @@ class Graph:
         self.polymer = polymer
         self.model = model
         self.viscosity_as_a_function_of_temperature_and_shear_stress(deck, polymer, model, features)
+        self.bird_viscosity_as_a_function_of_temperature_and_strain_rate(deck, polymer, model, features)
     
         
 
@@ -42,10 +43,10 @@ class Graph:
         axes.grid()
         axes.set_xlabel("Shear stress to the power of 1/2", fontsize=16)
         axes.set_ylabel("log ( Melt viscosity )", fontsize=16)
-        axes.set_title(" %s " % (polymer.name), fontsize=16, y=1.)
+        axes.set_title("First Model for %s " % (polymer.name), fontsize=16, y=1.)
         axes.legend()
         plt.savefig("./graphics/viscosity_as_a_function_of_temperature_and_shear_stress.pdf", format="pdf")
-
+        plt.show()
 
     def bird_viscosity_as_a_function_of_temperature_and_strain_rate(self, deck, polymer, model, features):
         # Prediction of the melt viscosity as a function of the temperature and the strain rate.
@@ -72,6 +73,7 @@ class Graph:
         axes.grid()
         axes.set_xlabel("Strain rate in /s", fontsize=16)
         axes.set_ylabel("Melt viscosity", fontsize=16)
-        axes.set_title(" %s " % (polymer.name_bird), fontsize=16, y=1.)
+        axes.set_title("Second Model for %s " % (polymer.name_bird), fontsize=16, y=1.)
         axes.legend()
         plt.savefig("./graphics/viscosity_with_bird_model.pdf", format="pdf")
+        plt.show()
