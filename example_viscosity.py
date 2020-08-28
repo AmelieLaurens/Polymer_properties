@@ -4,6 +4,8 @@ from common_classes import *
 
 cwd = os.getcwd()
 
+os.makedirs(cwd + "/" + "graphics", exist_ok=True)
+
 deck = Deck(cwd + "/" + "deck.yaml")
 
 constants = Deck(cwd + "/" + "constants.yaml")
