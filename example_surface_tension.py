@@ -16,4 +16,4 @@ result = Result(deck, polymer, model)
 
 surface_tension = result.calculation_of_surface_tension(deck, polymer, model)
 
-print(surface_tension)
+print('The polymer surface tension is : ' '%s (in g/s^2).' % (surface_tension))
